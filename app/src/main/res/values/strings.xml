@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">trial1</string>
+
+        <string-array name="med_array">
+            <item>paracetamol</item>
+            <item>crocin</item>
+            <item>cipla</item>
+            <item>cheston cold</item>
+            <item>cough Syrup</item>
+            <item>dCold</item>
+        </string-array>
+</resources>

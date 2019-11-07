@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".viewpatient">
+
+    <Button
+        android:id="@+id/Details"
+        android:layout_width="256dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="112dp"
+        android:background="#fff000"
+        android:text="View details"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="onButtonClick"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="257dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="254dp"
+        android:background="#fff000"
+        android:text="Medical history"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="onButton1Click"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/prescription"
+        android:layout_width="262dp"
+        android:layout_height="58dp"
+        android:layout_alignStart="@+id/history"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="273dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Prescription"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:onClick="onButton2Click"
+        android:layout_alignLeft="@+id/history"/>
+
+    <Button
+        android:id="@+id/examination"
+        android:layout_width="260dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="151dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Examination"
+        android:onClick="onButton3Click"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#010101"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="73dp"
+        android:onClick="onButton6Click"
+        android:layout_marginLeft="73dp"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@mipmap/ic_home" />
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="onButton4Click"
+        app:srcCompat="@mipmap/ic_logout"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#030303"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="View Patient"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <ImageButton
+        android:id="@+id/appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="onButton5Click"
+        app:srcCompat="@mipmap/ic_add_appointment" />
+
+</RelativeLayout>

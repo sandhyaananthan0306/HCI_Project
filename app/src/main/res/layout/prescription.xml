@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".prescription">
+
+    <EditText
+        android:id="@+id/medicine"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="259dp"
+        android:layout_marginLeft="259dp"
+        android:layout_marginTop="271dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/medicine3"
+        android:layout_width="121dp"
+        android:layout_height="62dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="411dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/medicine2"
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="259dp"
+        android:layout_marginLeft="259dp"
+        android:layout_marginTop="338dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textMultiLine" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#050505"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentLeft="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Prescription"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/tests"
+        android:layout_alignRight="@+id/tests"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="-155dp"
+        android:layout_marginRight="-155dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/complaint"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="199dp"
+        android:ems="10"
+        android:hint="Chief Complaint"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/tests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="131dp"
+        android:ems="10"
+        android:hint="Tests (if any)"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/doc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="137dp"
+        android:ems="10"
+        android:hint="Doctor's Name"
+        android:inputType="textPersonName"
+        android:text="Sandhya" />
+
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@mipmap/ic_save" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/exam"
+        android:layout_alignLeft="@+id/exam"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="onButtonClick"
+        app:srcCompat="@mipmap/ic_home" />
+
+    <ImageButton
+        android:id="@+id/addappointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/doc"
+        android:layout_alignLeft="@+id/doc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="onButton1Click"
+        app:srcCompat="@mipmap/ic_add_appointment" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="141dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/opd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="OPD number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/exam"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-116dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onButton5Click"
+        android:text="Examination"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_marginTop="-41dp"
+        android:layout_marginEnd="-152dp"
+        android:layout_marginRight="-152dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-136dp"
+        android:layout_marginRight="-136dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/name"
+        android:layout_toLeftOf="@+id/name"
+        android:onClick="onButton2Click"
+        app:srcCompat="@mipmap/ic_logout" />
+
+    <EditText
+        android:id="@+id/n1"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="281dp"
+        android:ems="10"
+        android:hint="Q1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/n2"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="211dp"
+        android:layout_marginLeft="211dp"
+        android:layout_marginTop="346dp"
+        android:ems="10"
+        android:hint="Q2"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/n3"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="211dp"
+        android:layout_marginLeft="211dp"
+        android:layout_marginTop="415dp"
+        android:ems="10"
+        android:hint="Q3"
+        android:inputType="number" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/m1"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="274dp"
+        android:layout_weight="1"
+        android:completionThreshold="1"
+        android:gravity="center"
+        android:hint="medicine1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/m2"
+        android:layout_width="142dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="337dp"
+        android:layout_weight="1"
+        android:completionThreshold="1"
+        android:gravity="center"
+        android:hint="medicine2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/m3"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="413dp"
+        android:layout_weight="1"
+        android:completionThreshold="1"
+        android:gravity="center"
+        android:hint="medicine3"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
